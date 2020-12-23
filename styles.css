@@ -108,4 +108,19 @@ li {
   line-height: 100%;
   font-weight: 500;
   color: var(--text-white);
+
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom;
+}
+
+.button.button--outlined {
+  background-color: transparent;
+  outline: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.button:hover {
+  transform: translateY(2px) scale(1.05);
+  background-color: rgba(238, 2, 144, 0.9);
+  color: var(--text-white);
 }
