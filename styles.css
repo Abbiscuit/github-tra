@@ -46,11 +46,19 @@ li {
 
 /* Header */
 .header {
+  padding: 16px 32px;
+  box-shadow: var(--shadow);
+}
+
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 32px;
-  box-shadow: var(--shadow);
+
+  max-width: 968px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
 }
 
 .header__logo {
@@ -71,9 +79,21 @@ li {
   padding: 8px 16px;
 }
 
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 /* main */
 .main {
   padding: var(--spacing-lg);
+  flex: 1;
+
+  max-width: 968px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* card */
@@ -123,4 +143,14 @@ li {
   transform: translateY(2px) scale(1.05);
   background-color: rgba(238, 2, 144, 0.9);
   color: var(--text-white);
+}
+
+/* footer */
+.footer {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  border-top: var(--border-black);
 }
