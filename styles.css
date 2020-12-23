@@ -7,9 +7,22 @@
 :root {
   --text-black: #222;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  --border-black: 1px solid rgba(0, 0, 0, 0.18);
+
   --spacing-lg: 24px;
   --spacing-md: 16px;
   --spacing-sm: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: var(--text-black);
 }
 
 a {
@@ -36,7 +49,6 @@ li {
 .header__logo {
   font-size: 24px;
   font-weight: 600;
-  color: var(--text-black);
 }
 
 .header__list {
@@ -55,4 +67,31 @@ li {
 /* main */
 .main {
   padding: var(--spacing-lg);
+}
+
+/* card */
+.card {
+  max-width: 300px;
+  padding: var(--spacing-md);
+  border: var(--border-black);
+
+  transition: 0.2s ease-out;
+  transform-origin: bottom;
+}
+
+.card:hover {
+  transform: translateY(2px) scale(1.05);
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: var(--spacing-md);
+}
+
+.card__description {
+  color: var(--text-black);
+  font-size: 16px;
+  line-height: 24px;
+  /* margin-bottom: var(--spacing-md); */
 }
