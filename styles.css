@@ -81,13 +81,6 @@ li {
   max-width: 300px;
   padding: var(--spacing-md);
   border: var(--border-black);
-
-  transition: 0.2s ease-out;
-  transform-origin: bottom;
-}
-
-.card:hover {
-  transform: translateY(2px) scale(1.05);
 }
 
 .card__title {
