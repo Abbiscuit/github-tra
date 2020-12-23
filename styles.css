@@ -137,7 +137,7 @@ li {
 
 .card__left {
   width: 354px;
-  padding-right: var(--spacing-md);
+  padding-right: var(--spacing-lg);
 }
 
 .card__right {
